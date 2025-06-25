@@ -4,7 +4,7 @@ import entity.Posts;
 
 import java.util.List;
 
-public interface PostDao {
+public interface PostDAO {
     void insertPost(Posts posts);   // 글 작성
     Posts getPostById(int id);      // id로 글 조회
     List<Posts> getAllPosts();      // 모든 글 조회

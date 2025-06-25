@@ -4,7 +4,7 @@ import entity.Comments;
 
 import java.util.List;
 
-public interface CommentDao {
+public interface CommentDAO {
     void insertCommentDao(Comments comments);   // 댓글 작성
     Comments getCommentById(int id);            // id로 댓글 조회
     List<Comments> getAllComments();            // 모든 댓글 조회
