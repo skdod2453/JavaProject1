@@ -1,18 +1,18 @@
 package entity;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Comment {
     private int id;
     private int postId;
     private int userId;
     private String content;
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
     public Comment() {
     }
 
-    public Comment(int id, int postId, int userId, String content, Date createdAt) {
+    public Comment(int id, int postId, int userId, String content, LocalDateTime createdAt) {
         this.id = id;
         this.postId = postId;
         this.userId = userId;
@@ -25,12 +25,12 @@ public class Comment {
     public int getPostId() { return postId; }
     public int getUserId() { return userId; }
     public String getContent() { return content; }
-    public Date getCreatedAt() { return createdAt; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
 
     // set
     public void setId(int id) { this.id = id; }
     public void setPostId(int postId) { this.postId = postId; }
     public void setUserId(int userId) { this.userId = userId; }
     public void setContent(String content) { this.content = content; }
-    public void setCreatedAt(Date createdAt) { this.createdAt = createdAt;}
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt;}
 }
