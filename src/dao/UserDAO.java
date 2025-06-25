@@ -1,7 +1,6 @@
 package dao;
 
 import entity.User;
-import java.util.List;
 
 public interface UserDAO {
     void insertUser(User users);       // 회원 추가
