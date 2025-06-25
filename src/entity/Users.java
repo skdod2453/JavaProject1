@@ -1,8 +1,8 @@
 package entity;
 
 public class Users {
-    private int id;
-    private String nickname;
+    private int id;     // 회원 ID
+    private String nickname;    // 닉네임
 
     public Users() {}
 
