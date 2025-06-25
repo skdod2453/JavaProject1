@@ -9,5 +9,4 @@ public interface PostDAO {
     Post getPostById(int id);      // id로 글 조회
     List<Post> getAllPosts();      // 모든 글 조회
     void updatePost(Post posts);   // 글 수정
-    void deletePost(int id);        // id로 글 삭제
 }

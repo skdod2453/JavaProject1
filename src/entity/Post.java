@@ -1,6 +1,6 @@
 package entity;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Post {
     private int id;
@@ -8,11 +8,11 @@ public class Post {
     private String title;
     private String content;
     private int likeCount;
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
     public Post() {}
 
-    public Post(int id, int userId, String title, String content, int likeCount, Date createdAt) {
+    public Post(int id, int userId, String title, String content, int likeCount, LocalDateTime createdAt) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -27,7 +27,7 @@ public class Post {
     public String getTitle() { return title; }
     public String getContent() { return content; }
     public int getLikeCount() { return likeCount; }
-    public Date getCreatedAt() { return createdAt; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
 
     // set
     public void setId(int id) { this.id = id; }
@@ -35,6 +35,6 @@ public class Post {
     public void setTitle(String title) { this.title = title; }
     public void setContent(String content) { this.content = content; }
     public void setLikeCount(int likeCount) { this.likeCount = likeCount; }
-    public void setCreatedAt(Date createdAt) { this.createdAt = createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 }
 
