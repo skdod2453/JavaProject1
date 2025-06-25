@@ -2,17 +2,17 @@ package entity;
 
 import java.util.Date;
 
-public class Comments {
+public class Comment {
     private int id;
     private int postId;
     private int userId;
     private String content;
     private Date createdAt;
 
-    public Comments() {
+    public Comment() {
     }
 
-    public Comments(int id, int postId, int userId, String content, Date createdAt) {
+    public Comment(int id, int postId, int userId, String content, Date createdAt) {
         this.id = id;
         this.postId = postId;
         this.userId = userId;

@@ -1,12 +1,12 @@
 package entity;
 
-public class Users {
+public class User {
     private int id;     // 회원 ID
     private String nickname;    // 닉네임
 
-    public Users() {}
+    public User() {}
 
-    public Users(int id, String nickname) {
+    public User(int id, String nickname) {
         this.id = id;
         this.nickname = nickname;
     }
